@@ -9,7 +9,7 @@ This project demonstrates a **Kafka-based** producer-consumer system using **Doc
 - **Python**: For producer and consumer scripts.
 - **Docker**: Containerization.
 
-2-![Tools](Tools.jpeg)
+2-![Tools](images/Tools.jpg)
 
 ## Setup Instructions
 
@@ -18,12 +18,11 @@ To start the services (Zookeeper, Kafka, Kafka Manager), run the following comma
 ```bash
 docker-compose -f kafka-docker-compose.yaml up -d
 ```
-Once the services are up, configure the Kafka cluster using the Kafka Manager interface.
+Once the services are up, configure the Kafka cluster and topics using the Kafka Manager interface.
 
+1-![Cluster](images/Cluster.jpeg)
 
-1-![Cluster](Cluster.jpeg)
-
-2-![Topic](Topic.jpeg)
+2-![Topic](images/Topic.jpeg)
 
 
 
