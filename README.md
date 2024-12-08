@@ -9,7 +9,7 @@ This project demonstrates a **Kafka-based** producer-consumer system using **Doc
 - **Python**: For producer and consumer scripts.
 - **Docker**: Containerization.
 
-2-![Tools](images/Tools.jpg)
+![Tools](images/Tools.jpg)
 
 ## Setup Instructions
 
