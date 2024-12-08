@@ -42,9 +42,15 @@ docker exec -it kafka /bin/bash
 This allows you to execute the producer and consumer scripts inside the Kafka container.
 
 
-### 2. **Start the Producer**
+### 2. **Navigate to the app directory**
 
-Once inside the Kafka container, run this command to start the producer script:
+```bash
+cd app
+```
+
+### 3. **Start the Producer**
+
+Inside the Kafka container, run:
 
 ```bash
 python3 producer.py
@@ -53,18 +59,21 @@ python3 producer.py
 The producer fetches jokes from JokeAPI and sends them to the Kafka topic `JokeTest`.
 
 
-### 3. **Start the Consumer**
+### 4. **Start the Consumer**
 
 In a new terminal window (while the Kafka container is still running), access the container again with the same command:
 
 ```bash
 docker exec -it kafka /bin/bash
 ```
-Then, run this command to start the consumer script:
+
+Then, run:
 
 ```bash
+cd app
 python3 consumer.py
 ```
+
 The consumer will listen to the `JokeTest` topic and print out the jokes.
 
 ## Additional Notes
